@@ -50,7 +50,7 @@ docker-package:
 docker-config:
   file.managed:
     - name: {{ docker.configfile }}
-    - source: salt://docker/files/config
+    - source: salt://docker/files/daemon.json
     - template: jinja
     - mode: 644
     - user: root
